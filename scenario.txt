@@ -1,3 +1,4 @@
+blipper
 github account
 github repo: https://github.com/webgast/tester
 Desktop/git_test map gemaakt
@@ -31,6 +32,38 @@ gecommit (commited), gewijzigd (modified) en voorbereid voor een commit (staged)
     Modified betekent dat je het bestand hebt gewijzigd maar dat je nog niet naar je database gecommit hebt.
 
     Staged betekent dat je al hebt aangegeven dat de huidige versie van het aangepaste bestand in je volgende commit meegenomen moet worden.
+
+git commit -m "tekst die commit omschrijft"
+met git status dus weer uit te vragen.
+met git log zie je de gegevens van de commit (met de hash)
+
+als je een remote repository gebruikt doe je dat met git clone <url>
+
+.... clone verhaal
+Eleven:Desktop johan$ mkdir git_test_clone
+Eleven:Desktop johan$ cd git_test_clone/
+Eleven:git_test_clone johan$ git clone https://github.com/webgast/tester .
+
+Eleven:git_test_clone johan$ git remote -v
+origin	https://github.com/webgast/tester (fetch)
+origin	https://github.com/webgast/tester (push)
+
+met git remote -v toon je de informatie over de remote repo.
+
+met git diff zie je verschillen die gemaakt zijn.
+
+zo haal je de laatste versie op van remote repo:
+
+Eleven:git_test_clone johan$ git pull origin master
+From https://github.com/webgast/tester
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+hiermee "duwen" we alles naar de remote repo:
+
+Eleven:git_test_clone johan$ git push origin master
+Everything up-to-date
+
 
 
 
