@@ -1,0 +1,36 @@
+github account
+github repo: https://github.com/webgast/tester
+Desktop/git_test map gemaakt
+testen of je git wel geinstalleerd hebt met git --version
+(indien niet geinstallerd, git installeren)
+https://git-scm.com/downloads
+in mijn map, initialiseer ik een git repo met:
+git init
+als het goed is, heb je nu een map .git in je map staan.
+je kunt alles lezen over het git programma met "man git" 
+en kortere versie git help <commando> of git <commando> --help 
+we kunnen de globale variabelen zetten:
+git config --global user.name "gebruiker"
+git config --global user.email "poi@poipoi"
+en bekijken met git config --list
+je kan de git tracking weghalen door .git directory te deleten.
+met git status kan je de status bekijken van het project
+in een .gitignore file kan je bestanden of groepen bestanden uitsluiten.
+ik maakte blieper.txt en zet "blieper.txt" in mijn .gitignore file.
+dan roep ik opnieuw git status aan en je merkt dat blieper.txt niet meer getracked wordt.
+om bestanden toe te voegen aan staging: git add -A of git add .
+met git reset kan je dat ongedaan maken.
+of met git rm -cached <filename> voor een individueel bestand.
+maar git reset <filename> werkt ook.
+eenmaal in staging, kunnen de bestanden ge-commit worden.
+
+gecommit (commited), gewijzigd (modified) en voorbereid voor een commit (staged):
+
+    Committed houdt in dat alle data veilig opgeslagen is in je lokale database.
+
+    Modified betekent dat je het bestand hebt gewijzigd maar dat je nog niet naar je database gecommit hebt.
+
+    Staged betekent dat je al hebt aangegeven dat de huidige versie van het aangepaste bestand in je volgende commit meegenomen moet worden.
+
+
+
