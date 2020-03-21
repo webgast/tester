@@ -1,4 +1,3 @@
-blipper
 github account
 github repo: https://github.com/webgast/tester
 Desktop/git_test map gemaakt
@@ -65,5 +64,6 @@ Eleven:git_test_clone johan$ git push origin master
 Everything up-to-date
 
 
+maken van een branch: git branch <branchname>
 
 
