@@ -66,6 +66,22 @@ Everything up-to-date
 
 maken van een branch: git branch <branchname>
 
+zetten van een externe repo:
+
+git init
+    git add .
+    git commit -m "my commit"
+    git remote add origin <remote repository URL>
+    git push origin master
+
+om toch te kunnen pushen, alhoewel ie dat niet leuk vindt;
+git push --force
+
 om toch in de remote te kunnen pushen:
 
 git push --force --set-upstream origin master
+
+als je per se twee repo's wilt combineren:
+git pull origin master --allow-unrelated-histories
+
+
